@@ -90,11 +90,6 @@ hr {
 /* ========================================
    TYPOGRAPHY
 ======================================== */
-
-h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 .2em;
-	font-weight: 400;
-}
 h1 {
 	font-family: "Cinzel", serif;
     font-size: clamp(2.15rem, 5vw, 3.5rem);
@@ -226,12 +221,12 @@ blockquote small:before {
   opacity: 0.8;
   text-shadow: 3px 2px 5px rgba(0,0,0,.45);
 }
-.tagline {
-  font-size: clamp(12px, 2vw, 20px);
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: #7a7f86;
-  margin-top: 1.5em;
+.intro {
+  font-size: clamp(14px, 2vw, 20px);
+  color: #ccc;
+  line-height: 1.35;
+  margin: 1.2em auto 0;
+  max-width: 40ch;
 }
 .hero + footer {
   position: absolute;
@@ -239,14 +234,14 @@ blockquote small:before {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  font-size: clamp(10px, 1vw, 14px);
+  font-size: clamp(11px, 1vw, 14px);
   color: rgba(255,255,255,.65);
 }
 .hero + footer a img {
   height: 2.5em;
 }
-.hero + footer p {
-  margin-top: 1em;
+.hero + footer ul p {
+  margin: 1em auto 0;
 }
 /* ========================================
    GRID SYSTEM

@@ -112,10 +112,21 @@ h1 {
 	margin: clamp(-1.1em, -2vw, -0.3em) 0 0 clamp(2em, 2vw, 3em);
 }
 h2 {
-	font-size: 1.7em;
-	letter-spacing: -0.05em;
-	color: #fff;
-	line-height: 1;
+  font-size: clamp(.95rem, 2vw, 1.2rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8f989f;
+  margin: 1.2em 0 0;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin: .6em auto 0;
+  background: rgba(255,255,255,.25);
 }
 h3 { font-size: 1.4em; }
 h4 { font-size: 1.2em; color: #929292; }
@@ -521,7 +532,7 @@ body.modal-open {
    FILTER BAR
 ======================================== */
 .filter-bar {
-	margin-bottom:2.5em;
+	margin-bottom:2em;
 }
 .filter-bar menu {
 	display:flex;

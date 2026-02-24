@@ -1,113 +1,66 @@
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Kyle Stratton Media</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Detroit sports photographer and videographer Kyle Stratton creates dynamic athletic photography and cinematic sports films for athletes, teams, and brands.">
-<link rel="icon" type="image/png" href="/favicon.png">
-<style>
-:root {
-  --bg: #0a0b0d;
-  --text: #e6e6e6;
-  --muted: #7a7f86;
-  --line: #1a1c20;
-}
-
-* { box-sizing: border-box; }
-
-html, body {
-  margin: 0;
-  height: 100%;
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-.hero {
-  position: relative;
-  min-height: 100dvh;
-  display: grid;
-  align-items: end;
-  background: url("img/bridge.jpg") center center / cover no-repeat;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3) 40%, rgba(0,0,0,0.1));
-}
-
-.inner {
-  position: relative;
-  padding: clamp(24px, 5vw, 60px);
-  max-width: 700px;
-  transform: translateY(clamp(-40px, -8vh, -120px));
-}
-
-h1 {
-  margin: 0 0 8px;
-  letter-spacing: -0.05em;
-  font-weight: 300;
-  color: #ffa500;
-  font-size: clamp(28px, 4.5vw, 66px);
-}
-
-.sub {
-  margin: -.8em 0 1.3em 3em;
-  font-size: clamp(9px, 2vw, 25px);
-  letter-spacing: 0.12em;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--text);
-}
-
-.divider {
-  width: 60px;
-  height: 1px;
-  background: var(--line);
-  margin: 24px 0;
-}
-
-.status {
-  padding-left: 1em;
-  font-size: clamp(12px, 2vw, 20px);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-footer {
-  position: absolute;
-  bottom: 20px;
-  right: 24px;
-  font-size: clamp(7px, 2vw, 12px);
-  color: var(--muted);
-}
-</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sports Photographer in Detroit | Kyle Stratton</title>
+	<meta name="description" content="Detroit sports photographer and videographer Kyle Stratton creates dynamic athletic photography and cinematic sports films for athletes, teams, and brands.">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://kylestrattonmedia.com/">
+	<meta name="theme-color" content="#0b0f14">
+<!-- Favicon -->
+	<link rel="icon" type="image/png" href="/favicon.png">
+<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Kyle Stratton Media">
+	<meta property="og:title" content="Sports Photographer in Detroit | Kyle Stratton">
+	<meta property="og:description" content="Professional sports photography and cinematic sports videography in Detroit, Michigan.">
+	<meta property="og:url" content="https://kylestrattonmedia.com/">
+	<meta property="og:image" content="https://kylestrattonmedia.com/img/og-image.jpg">
+<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@USERNAME">
+	<meta name="twitter:title" content="Sports Photographer in Detroit | Kyle Stratton">
+	<meta name="twitter:description" content="Dynamic sports photography and cinematic sports films.">
+	<meta name="twitter:image" content="https://kylestrattonmedia.com/img/og-image.jpg">
+	<link rel="stylesheet" href="css/ksm.css">
 </head>
-
 <body>
-
-<header class="hero">
-  <div class="overlay"></div>
-
-  <div class="inner">
-    <h1>Kyle Stratton</h1>
-    <p class="sub">MEDIA</p>
-    <p class="status">COMING SOON</p>
-  </div>
-</header>
-
+<section class="hero">
+	<div class="overlay">
+	</div>
+	<header id="navtop" class="hero-header">
+		<button id="nav-toggle" aria-label="Toggle navigation"> <span class="nav-toggle-icon"></span> <span class="nav-toggle-icon"></span> <span class="nav-toggle-icon"></span> </button> 
+		<nav id="mobile-nav">
+			<ul>
+				<li><a href="/photography.html">Photography</a></li>
+				<li><a href="/video.html">Video</a></li>
+				<li><a href="/about.html">About</a></li>
+				<li><a href="/contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="inner">
+		<h1>
+			Kyle Stratton
+		</h1>
+		<p class="sub">
+			MEDIA
+		</p>
+	</div>
+</section>
 <footer>
-  © <span id="y"></span> Kyle Stratton Media
+	<ul>
+		<li> <a href="https://www.instagram.com/" title="Instagram" target="_blank"><img src="img/social/ig.jpg" alt="Instagram"> </a> </li>
+		<li> <a href="https://www.youtube.com/" title="YouTube" target="_blank"><img src="img/social/yt.jpg" alt="YouTube"> </a> </li>
+		<li> <a href="https://www.facebook.com/" title="Facebook" target="_blank"><img src="img/social/fb.jpg" alt="Facebook"> </a> </li>
+		<li> <a href="https://twitter.com/" title="X" target="_blank"><img src="img/social/x.jpg" alt="Twitter/X"> </a> </li>
+	</ul>
+	<p>
+		&copy; 2026 Kyle Stratton Media | All rights reserved
+	</p>
 </footer>
-
-<script>
-document.getElementById('y').textContent = new Date().getFullYear();
+<script src="js/scripts.js">
 </script>
-
 </body>
 </html>

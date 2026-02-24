@@ -195,7 +195,6 @@ blockquote small:before {
       rgba(0,0,0,0.1));
   z-index: 0;    
 }
-/* Hero inner text */
 .inner {
   position: absolute;
   padding-top: clamp(150px, 5vw, 60px);
@@ -379,8 +378,8 @@ body.nav-open #nav-toggle .nav-toggle-icon:nth-child(3) {
 }
 #mobile-nav {
     display: none;
-    position: fixed;     /* KEY CHANGE */
-    top: 60px;           /* below header */
+    position: fixed;
+    top: 60px;
     right: 3rem;
     width: fit-content;
     padding: 1.2rem 1rem;
@@ -510,7 +509,7 @@ body.nav-open #mobile-nav {
 .modal-image img {
   display: block;
   max-width: 100%;
-  max-height: 90vh;     /* KEY: keeps full image visible */
+  max-height: 90vh;     /* Keeps full image visible */
   width: auto;
   height: auto;
   object-fit: contain;  /* extra safety */
@@ -667,10 +666,7 @@ footer a:hover img {
 /* ========================================
    UTILITIES
 ======================================== */
-/* ========================================
-   BACK TO TOP
-======================================== */
-
+/* --BACK TO TOP-- */
 .top-of-page {
     text-align: center;
 }
@@ -695,12 +691,12 @@ footer a:hover img {
 .top-button:active {
     transform: translateY(1px);
 }
-/* -------------------------------------------------------------
-======	MEDIA QUERIES
-------------------------------------------------------------- */
+/* ========================================
+   MEDIA QUERIES
+======================================== */
     
 /* -- Media query 2 (mq2)
-------------------------------------------------------------- */
+---------------------------------------- */
 @media only screen and (max-width: 800px) {
  .mq2-col-full {
 width: 100%;
@@ -722,7 +718,7 @@ width: 75%;
 }
 } 
 /* -- Media query 3 (mq3)
-------------------------------------------------------------- */
+---------------------------------------- */
 @media only screen and (max-width: 500px) {
  .mq3-col-full {
 width: 100%;
@@ -753,7 +749,7 @@ margin-top: 0;
 }
 }
 /* -- PRINT STYLES 
-------------------------------------------------------------- */
+---------------------------------------- */
 @media print {
 * {
 	background:transparent !important;

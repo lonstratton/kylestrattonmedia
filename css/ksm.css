@@ -557,58 +557,52 @@ body.modal-open {
     object-fit: cover;
     display: block;
 }
+
 .ar-43  { aspect-ratio: 4 / 3; }
 .ar-169 { aspect-ratio: 16 / 9; }
 .ar-916 { aspect-ratio: 9 / 16; }
 
 .works-page .works figure {
-	transition:opacity .35s ease;
-	margin-bottom:2em;
+	transition: opacity .35s ease;
+	margin-bottom: 2em;
 }
 .works-page .works figure.dimmed {
-	opacity:.2;
-	filter:grayscale(80%);
+	opacity: .2;
+	filter: grayscale(80%);
 }
-.works-page .works figure.dimmed:hover img {
-	opacity:1;
-	transform:none;
-}
-.works-page .works figure.dimmed:hover .zoom {
-    opacity: 0;
+.works-page .works figure.dimmed a {
+	pointer-events: none;
+	cursor: default;
 }
 .works-page figure > a {
-	display:block;
-	position:relative;
-	overflow:hidden;
-	width:100%;
-	padding-top:1em;
-}
-.works figure img {
-	display:block;
-	width:100%;
-	transition:opacity .35s ease;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 1em;
 }
 .works-page figure .zoom {
-	position:absolute;
-	inset:0;
-	background:url(../img/zoom.png) no-repeat center;
-	background-size:40px;
-	opacity:0;
-	transition:opacity .35s ease;
+	position: absolute;
+	inset: 0;
+	background: url(../img/zoom.png) no-repeat center;
+	background-size: 40px;
+	opacity: 0;
+	transition: opacity .35s ease;
+	pointer-events: none;
 }
 .works-page figure > a:hover img {
-	opacity:.5;
+	opacity: .5;
 }
 .works-page figure > a:hover .zoom {
-	opacity:.9;
+	opacity: .9;
 }
 .works figure figcaption {
 	font-size: .85em;
-	margin-top:.5em;
-	padding:0 .5em;
-	white-space:nowrap;
+	margin-top: .5em;
+	padding: 0 .5em;
+	white-space: nowrap;
 }
-.works figure figcaption a { 
+.works figure figcaption a {
 	text-decoration: none;
 }
 .arrow {

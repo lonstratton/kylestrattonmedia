@@ -204,6 +204,7 @@ blockquote small:before {
   transform: translateY(clamp(-40px, -8vh, -120px));
   z-index: 10;
 }
+/* KYLE STRATTON */
 .brand-title {
   position: relative;
   display: inline-block;
@@ -226,6 +227,9 @@ blockquote small:before {
   white-space: nowrap;
   pointer-events: none;
   z-index: -1;
+}
+.brand-title a:hover .brand-bg {
+  opacity: 0;
 }
 .hero h1 {
   color: #ff7110;

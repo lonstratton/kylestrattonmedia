@@ -405,8 +405,8 @@ body.nav-open #nav-toggle .nav-toggle-icon:nth-child(3) {
 }
 #mobile-nav {
     display: none;
-    position: fixed;
-    top: 60px;
+    position: absolute;
+    top: .75rem;
     right: 3rem;
     width: fit-content;
     padding: 1.2rem 1rem;

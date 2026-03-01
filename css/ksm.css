@@ -287,6 +287,30 @@ blockquote small:before {
 header#navtop {
 	overflow: visible;
 	position: relative;
+	z-index: 1;
+}
+header#navtop:not(.hero-header)::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+
+	width: clamp(400px, 70vw, 1000px);
+	height: clamp(30px, 5vw, 80px);
+
+	background: radial-gradient(
+		ellipse at center,
+		rgba(255, 85, 0, 0.22) 0%,
+		rgba(255, 60, 0, 0.18) 30%,
+		rgba(255, 40, 0, 0.10) 55%,
+		rgba(255, 40, 0, 0.04) 75%,
+		transparent 100%
+	);
+
+	filter: blur(clamp(18px, 3vw, 28px));
+	pointer-events: none;
+	z-index: 0;
 }
 header nav { margin-top:2em; }
 header nav ul {

@@ -214,6 +214,17 @@ blockquote small:before {
   white-space: nowrap;
   text-shadow: 3px 1px 15px rgba(0,0,0,.9);
 }
+.hero h2 {
+  margin: 2em auto;
+  letter-spacing: .02em;
+  font-size: clamp(10px, 3vw, 23px);
+  font-weight: 400;
+  letter-spacing: -.04em;
+  white-space: nowrap;
+  text-shadow: 3px 1px 15px rgba(0,0,0,.9);
+}
+.hero h2 a {color: #ff7110;}
+.hero h2 a:hover {color: #ddd;}
 .sub {
   margin: -1.4em 0 1.3em 2em;
   font-size: clamp(18px, 2vw, 22px);
@@ -226,10 +237,11 @@ blockquote small:before {
 }
 .intro {
   font-size: clamp(14px, 2vw, 20px);
-  color: #ccc;
+  color: #ddd;
   line-height: 1.35;
   margin: 1.2em auto 0;
   max-width: 40ch;
+  text-shadow: 3px 1px 15px rgba(0,0,0,.9);
 }
 .hero + footer {
   position: absolute;
